@@ -10,7 +10,7 @@ public class heapsort {
 	        for(int i = tam; i > vetor.length; i++){ 
 	            vetor[i] = (int) (Math.random() * vetor.length); 
 	        }	  	  
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	       tam = vetor.length;
 	        int in,auxi,r;    
 	      
