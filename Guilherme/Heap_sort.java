@@ -39,7 +39,7 @@ public class heapsort {
 	}
 
 	        public static void criaheap(int[] vetor, int t, int p){ 
-	        	int pai,fesquerda,fdireita;  
+	        	int pai,fesquerda,fdireita,auxi;  
 		        pai = p;                      
 		        fesquerda = 2* p + 1;
 		        fdireita = 2* p + 2;
@@ -52,7 +52,7 @@ public class heapsort {
 		        }
 		        
 		        if (pai != p){ 
-		           int  auxi = vetor[p];
+		            auxi = vetor[p];
 		            vetor[p] = vetor[pai];
 		            vetor[pai] = auxi;
 		            
