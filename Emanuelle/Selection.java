@@ -1,7 +1,8 @@
 package selecao;
 import java.util.Arrays;
 import java.util.Random;
-public class Selection{
+public class Selection
+{
 	public static void main(String[]args)
 	{
 		int[]v = gerarVetor(10);
@@ -13,7 +14,7 @@ public class Selection{
 		for(int i=0; i <v.length; i++) //O(n)
 		{ 
 			int menor = i;
-			for (int j = i + 1; j < v.length; j++)//O(n)
+			for (int j = i + 1; j < v.length; j++)//O(n-1)
 			{ 
 				if(v[j] < v[menor])
 					menor = j;
@@ -31,7 +32,8 @@ public class Selection{
 	{
 		int []v = new int[n];
 		Random gerador = new Random();
-		for(int i = 0; i < n; i++){
+		for(int i = 0; i < n; i++)
+		{
 			v[i] = gerador.nextInt(100);
 		}
 		return v;
